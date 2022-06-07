@@ -32,13 +32,27 @@ For example: Bob is staking 10 IchiCoins whereas Alice is staking 5 IchiCoins. B
 To run an instance of IchiChain: clone the repository, install the associated dependencies (Flask, jsonpickle, and a few others), and at the command line write python main.py (the IP you'd like to run on) (the port) (the REST API port) (optional: a key file)
 
 For testing purposes try running these commands all in separate instances of command prompt:
+`
 python main.py localhost 10001 5000 keys/genesisPrivateKey.pem
 python main.py localhost 10002 5001
 python main.py localhost 10003 5003 keys/stakerPrivateKey.pem
 python interaction.py
+`
 
 The optional key file arg is used in the third instance so we can simulate Alice's computer and test our PoS blockchain by selecting the next forger. You'll notice the first instance also includes an optional key file argument as that instance becomes the genesis node staker. This is done to solve what I refer to as the block/staker conundrum: 
 
 How are you going to produce a new block if there isn't anyone staking? And, if there isn't anyone staking, how are you going to add new stakers which requires a new block?
 
 We therefore provide a single, genesis staker in order to solve this conundrum.
+
+# Further Reading/What's Next
+In the future as I learn more React I'd love to update this repo with a nice front-end for IchiChain, however, I am finding myself more interested in back-end and smart contract development so it may be a long time before I revisit this project. A lot of the Proof of Stake mechanism that was implemented can be found in Lukas Hubl's excellent [Udemy Course](https://www.udemy.com/course/build-your-own-proof-of-stake-blockchain/)
+
+If you're interested in learning more about blockchains or building your own, here's a list of useful links:
+- (What Is Blockchain Technology?)[https://academy.binance.com/en/articles/what-is-blockchain-technology-a-comprehensive-guide-for-beginners]
+- (Bitcoin Whitepaper)[https://bitcoin.org/bitcoin.pdf]
+- (Ethereum Whitepaper)[https://ethereum.org/en/whitepaper/]
+- (Python Tutorial for Beginners)[https://www.youtube.com/watch?v=8124kv-632k&ab_channel=freeCodeCamp.org]
+- (How To Build A Blockchain In Python)[https://www.activestate.com/blog/how-to-build-a-blockchain-in-python/]
+- (Learn Cryptography)[https://www.tutorialspoint.com/cryptography/index.htm]
+- (Formalizing and Securing Relationships on Public Networks)[https://firstmonday.org/ojs/index.php/fm/article/download/548/469]
