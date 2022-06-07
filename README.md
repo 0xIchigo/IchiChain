@@ -1,5 +1,5 @@
 # IchiChain
-IchiChain is a rudimentary Proof of Stake blockchain coded in Python by 0xIchigo. The purpose of this project was to deepen my understanding of how blockchains and consensus mechanisms operate on a more technical, fundamental level. I have open-sourced the code in an effort to provide educational value to those looking to deepen their understanding of blockchain technology as well as those looking to code their own blockchains!
+IchiChain is a rudimentary Proof of Stake blockchain coded in Python by [0xIchigo](https://twitter.com/0xIchigo). The purpose of this project was to deepen my understanding of how blockchains and consensus mechanisms operate on a more technical, fundamental level. I have open-sourced the code in an effort to provide educational value to those looking to deepen their understanding of blockchain technology as well as those looking to code their own blockchains!
 
 The following will be a high-level overview regarding blockchains, proof of stake, and how to use IchiChain
 
@@ -31,7 +31,7 @@ For example: Bob is staking 10 IchiCoins whereas Alice is staking 5 IchiCoins. B
 # Cool primer on blockchain tech, but how do I use IchiChain?
 To run an instance of IchiChain: clone the repository, install the associated dependencies (Flask, jsonpickle, and a few others), and at the command line write python main.py (the IP you'd like to run on) (the port) (the REST API port) (optional: a key file)
 
-For testing purposes try running these commands all in separate instances of command prompt:
+For testing purposes try running these commands in their own instance of command prompt:
 
 - python main.py localhost 10001 5000 keys/genesisPrivateKey.pem
 - python main.py localhost 10002 5001
@@ -55,3 +55,5 @@ If you're interested in learning more about blockchains or building your own, he
 - [How To Build A Blockchain In Python](https://www.activestate.com/blog/how-to-build-a-blockchain-in-python/)
 - [Learn Cryptography](https://www.tutorialspoint.com/cryptography/index.htm)
 - [Formalizing and Securing Relationships on Public Networks](https://firstmonday.org/ojs/index.php/fm/article/download/548/469)
+
+If you've read this far, thank you! I hope I've provided you with some educational insight and inspired you to learn more about blockchain technology! Browse safely, Anon
