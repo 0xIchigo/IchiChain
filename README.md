@@ -26,7 +26,7 @@ IchiChain utilizes PoS by employing an Account Model. The Account Model keeps tr
 
 A lot mechanism is used in order to determine the next forger based on the proportionality of stake distributed amongst stakers. A lot is essentially a unique hash generated based on a staker's public key. Hash chaining is used in order to ensure the selection of the forger is entirely random. The amount of tokens held by the validator determines the amount of lots an account is allowed to create. 
 
-For example: Bob is staking 10 IchiCoins whereas Alice is staking 5 IchiCoins. Bob's account is allowed to create 10 lots for the next block selection whereas Alice's account can only produce 5 due to the proportionality of their stakes. Bob therefore has a higher chance to be selected as the next forger because he has twice Alice's stake. Instead, if Alice had 100 IchiCoins then her chance at becoming the next forger is ten times of that of Bob's.
+For example: Bob is staking 10 IchiCoins whereas Alice is staking 5 IchiCoins. Bob's account is allowed to create 10 lots for the next block selection whereas Alice's account can only produce 5 due to the proportionality of their respective stake. Bob therefore has a higher chance to be selected as the next forger because he has twice Alice's stake. Instead, if Alice had 100 IchiCoins then her chance at becoming the next forger is ten times of that of Bob's.
 
 # Cool primer on blockchain tech, but how do I use IchiChain?
 To run an instance of IchiChain: clone the repository, install the associated dependencies (Flask, jsonpickle, and a few others), and at the command line write python main.py (the IP you'd like to run on) (the port) (the REST API port) (optional: a key file)
